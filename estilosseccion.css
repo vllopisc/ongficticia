@@ -1,0 +1,762 @@
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --colorTextos: #666666;
+    --colorBotones: #9ec0a0;
+    --colorEncabezados: #9ec0a0;
+    --colorFondo: #eee;
+    --colorBackground: #ccc;
+    --colorEnlaces: #707070;
+    --colorEnlaceshover: black;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--Textoscolorines);
+    font-size: 1rem;
+    background-color: var(--colorBackground);
+}
+
+/* DEFINIMOS ANCHO CONTENEDOR */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+    background-color: var(--colorFondo);
+    -border: 1px dotted rgb(125, 125, 125);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN */
+
+/* SECCIÓN TESTIMONIOS */
+
+
+.testimonios__titulo {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--colorEncabezados);
+}
+
+.testimonios__subtitulo {
+    text-align: center;
+    color: var(--colorTextos);
+    margin: 20px 0;
+}
+
+.testimonios__contenedor {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.testimonio__card {
+    font-size: 1.2rem;
+    color: var(--colorFondo);
+    width: 10em;
+    height: 10em;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.testimonio__nombre {
+    padding-top: 6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Imágenes de testimonios */
+.testimonio__card--1 {
+    background-image: url(img/testimonio1verde.jpg);
+}
+
+.testimonio__card--2 {
+    background-image: url(img/testimonio2verde.jpg);
+}
+
+.testimonio__card--3 {
+    background-image: url(img/testimonio3verde.jpg);
+}
+
+/* Efecto hover sobre las imágenes de testimonios */
+
+.testimonio__card--1:hover {
+    background-image: url(img/testimonio1.jpg);
+}
+
+.testimonio__card--2:hover {
+    background-image: url(img/testimonio2.jpg);
+}
+
+.testimonio__card--3:hover {
+    background-image: url(img/testimonio3.jpg);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Testimonios B */
+
+.testimoniosB__contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+.testimoniosB__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+    max-width: 10rem;
+}
+
+.testimoniosB__titulo {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--colorEncabezados);
+}
+
+.testimoniosB__subtitulo {
+    text-align: center;
+    color: var(--colorTextos);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.testimoniosB__imagen {
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimoniosB__nombre {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 600;
+    color: var(--colorTextos);
+}
+
+
+.testimoniosB__texto {
+    text-align: center;
+    color: var(--colorTextos);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Testimonios C */
+
+.testimoniosC {
+    background-color: var(--colorEncabezados);
+    margin: 0 -20px;
+    padding: 20px;
+}
+
+.testimoniosC__contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+
+
+    list-style: none;
+
+}
+
+.testimoniosC__card {
+    background-color: var(--colorFondo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+    max-width: 12rem;
+    padding: 2rem 0;
+    border-radius: 1rem;
+}
+
+.testimoniosC__titulo {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--colorTextos)
+}
+
+.testimoniosC__subtitulo {
+    text-align: center;
+    color: var(--colorTextos);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+
+}
+
+.testimoniosC__imagen {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+}
+
+.testimoniosC__nombre {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 600;
+    color: var(--colorTextos);
+}
+
+
+.testimoniosC__texto {
+    padding: 0 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--colorTextos);
+    font-style: italic;
+}
+
+
+.testimoniosC__imagen:hover {
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NOTICIAS */
+
+
+
+.noticias__titulo {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--colorEncabezados);
+    margin-bottom: 0.5rem;
+}
+
+.noticias__subtitulo {
+    text-align: center;
+    color: var(--colorTextos);
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.noticias__contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.noticias__card {
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 220px;
+}
+
+.noticias__card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.noticias__imagen {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.noticias__contenido {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+}
+
+.noticias__titular {
+    font-size: 1.2rem;
+    color: var(--colorEncabezados);
+}
+
+.noticias__texto {
+    color: var(--colorTextos);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-height: 80px;
+    overflow: hidden;
+}
+
+.noticias__enlace {
+    color: var(--colorBotones);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.noticias__enlace:hover {
+    color: var(--colorEnlaceshover);
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FORMULARIO */
+
+.formulario {
+    background-color: var(--colorBotones);
+    margin: 0 -20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.formulario__contenedor {
+        height: 500px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.formulario__imagen {
+    width: 50%;
+    background-image: url(img/overlay.jpg);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.formulario__formulario {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+    margin: auto 0;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.formulario__titulo {
+    text-align: center;
+    font-size: 3.7rem;
+    color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 0.5rem;
+}
+
+.formulario__subtitulo {
+    text-align: center;
+    color: var(--colorFondo);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.formulario__grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+label {
+    font-weight: 600;
+    color: white;
+    margin-bottom: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para los inputs de texto y email */
+input[type="text"],
+input[type="email"] {
+    width: 200px;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--colorFondo);
+    /* border: 2px solid var(--colorTextos); */
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para el botón de envío */
+.formulario__boton {
+    padding: 14px 24px;
+    background: var(--colorBotones);
+    color: white;
+    border: 2px solid var(--colorFondo);
+    border-radius: 6px;
+    font-weight: 600;
+    margin-top: 20px;
+    width: 150px;
+    /* margin-left: auto;
+margin: auto; */
+
+
+}
+
+.formulario__boton:hover {
+    background: var(--colorFondo);
+    color: var(--colorEncabezados);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para los labels de campos obligatorios 
+.formulario__grupo label:after {
+    content: " *";
+    color: #ff4444;
+}
+    */
